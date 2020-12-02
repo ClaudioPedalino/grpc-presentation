@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+option csharp_namespace = "grpc.server.Service";
+
+enum ReadingStatus{
+	Invalid = 0;
+	Success = 1;
+	Failure = 2;
+}

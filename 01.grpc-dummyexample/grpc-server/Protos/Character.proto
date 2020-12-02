@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+option csharp_namespace = "grpc.server.Service";
+
+service CharacterInfoService {
+  rpc GetCharacterInfo (CharacterRequest) returns (CharacterReply);
+}
+
+message CharacterRequest {
+  int32 id = 1;
+}
+
+message CharacterReply {
+  int32 id = 1;  
+  string name = 2;
+  int32 height = 3;
+  int32 mass = 4;
+  string gender = 5;
+}

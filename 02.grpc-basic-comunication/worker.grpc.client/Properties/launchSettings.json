@@ -1,0 +1,10 @@
+﻿{
+  "profiles": {
+    "worker.grpc.client": {
+      "commandName": "Project",
+      "environmentVariables": {
+        "DOTNET_ENVIRONMENT": "Development"
+      }
+    }
+  }
+}
